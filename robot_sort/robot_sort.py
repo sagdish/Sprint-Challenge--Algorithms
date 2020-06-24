@@ -96,6 +96,9 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        # this is bi-directional bubble sort
+        # first it bubbles up to end then, next iteration it reverses opposite
+        # all untill we haven't done any swaps 
         self.set_light_on()
 
         while self.light_is_on():
